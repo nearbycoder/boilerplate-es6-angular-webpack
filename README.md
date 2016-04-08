@@ -2,7 +2,7 @@
 
 This is a starter kit to get you working with es6 classes and modules within Angular using Webpack.
 
-Basic Setup
+##Basic Setup
 
 1. run `git clone https://github.com/nearbycoder/boilerplate-es6-angular-webpack.git`
 2. run `npm install` within the directory the repo is located
@@ -10,3 +10,9 @@ Basic Setup
 4. From there the root of the app is `/src/app/app.js`
 
 Take note: I have created a example component called home. This wil show you how to use es6 imports with angular to create a folder module structure for your components.
+
+##Build Production
+
+run `npm run build`
+
+Take note: this will extract everything into the `./dist` folder as well as, dedupe any code for optimization, uglify the javascript bundle, and copy anything withint he public folder besides the html to the `./dist` folder. The reason why the html is not being copied is because this is all included inside the javascript bundle using [ngtemplate-loader](https://github.com/WearyMonkey/ngtemplate-loader). In addition the styles will be inlined after being comiled into css.
