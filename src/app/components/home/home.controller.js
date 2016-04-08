@@ -2,7 +2,7 @@ export default class HomeController {
   constructor (githubService) {
     'ngInject';
 
-    githubService.getRepos().$promise.then(results => {
+    githubService.getRepos({username: 'nearbycoder'}).$promise.then(results => {
       this.repos = results;
     });
   }
