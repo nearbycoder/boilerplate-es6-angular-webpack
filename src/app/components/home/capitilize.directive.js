@@ -1,8 +1,6 @@
 export default class esCapitilize {
   constructor () {
-    return {
-      restrict: 'A'
-    };
+    this.restrict = 'A';
   }
 
   link (scope, element) {
