@@ -1,5 +1,5 @@
 export default class esCapitilize {
-  construtor () {
+  constructor () {
     return {
       restrict: 'A'
     };
