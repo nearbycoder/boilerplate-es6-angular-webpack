@@ -11,7 +11,7 @@ export default class GitHubService {
         }
       }
     );
-
+    this.githubService = githubService;
     return githubService;
   }
 };

@@ -1,4 +1,4 @@
-export default class esCapitilize {
+export default class esCapitalize {
   constructor () {
     this.restrict = 'A';
   }
